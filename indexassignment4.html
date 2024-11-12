@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whack-a-Mole</title>
+<link rel="stylesheet" href="assignment4.css">
+</head>
+<body>
+<header class="bg-dark text-white py-3"><div class="container text-center"></div>Whack-a-Mole</header>
+<div id="mainDiv" class="container mt-5">
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <p>Click on the moles to score. You have 30 seconds to score as much as you can!</p>
+    </div>
+  <svg id="svg" viewBox="0 0 600 400">
+   
+    <g id="burrows">
+      <circle class="burrow" cx="150" cy="150" r="40"></circle>
+      <circle class="burrow" cx="300" cy="150" r="40"></circle>
+      <circle class="burrow" cx="450" cy="150" r="40"></circle>
+      <circle class="burrow" cx="150" cy="300" r="40"></circle>
+      <circle class="burrow" cx="300" cy="300" r="40"></circle>
+      <circle class="burrow" cx="450" cy="300" r="40"></circle>
+    </g>
+    <g id="mole">
+      <circle class="mole" cx="150" cy="150" r="30"></circle>
+      <circle class="mole" cx="300" cy="150" r="30"></circle>
+      <circle class="mole" cx="450" cy="150" r="30"></circle>
+      <circle class="mole" cx="150" cy="300" r="30"></circle>
+      <circle class="mole" cx="300" cy="300" r="30"></circle>
+      <circle class="mole" cx="450" cy="300" r="30"></circle>
+    </g>
+  </svg>
+  <button id="btn">Start Game</button>
+</div>
+<div id="bottom">Score: <span id="score">0</span> | Time Left: <span id="time">0:00</span></div>
+<div id="msg" class="msg">
+  <div class="content">
+    <span id="msgs"></span>
+    <span class="msgContent">X</span>
+  </div>
+</div>
+<footer>
+    <p>By : Anmoldeep Kaur [000911480]  &copy;2024 Mohawk Collede</p>
+    
+</footer>
+<script src="assignment4.js"></script>
+</body>
+</html>
